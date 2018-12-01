@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <title>добавление</title>
+</head>
+<body>
+    <div id="header">
+         <div class="headerImage" id="up">
+              <img src="/assets/img/ic_bgUp.jpg" alt="background"/>
+         </div>
+         <div class="headerImage"id="down">
+              <img src="/assets/img/ic_bgDown.jpg" alt="background"/>
+         </div>
+   </div>
+   <div class="formDisplay" id="formPost">
+        <form action="/createAuctionNote" method="post">
+        <div class="form_login">
+             <div class="inputtext" id="add">
+                  <p>Добавление аукциона в базу данных</p>
+             </div>
+             <div class="hr">
+                  <hr/>
+             </div>
+             <div class="enter" id="addEnter">
+                       <div class="addInput">
+                            <input class="input" name="date" placeholder='дата (пример: tue nov 5)'></input>
+                       </div>
+                       <div class="addInput">
+                            <input class="input" name="time" placeholder='время'></input>
+                       </div>
+                       <div class="addInput">
+                            <input class="input" name="place" placeholder='место'></input>
+                       </div>
+                       <div class="addInput">
+                            <input class="input" name="specific" placeholder='специфика'></input>
+                       </div>
+                       <button class="subButton" type="submit" name="button">Добавить</button>
+                  </form>
+             </div>
+             <div class="but" id="addButton">
+                  <a href="/menu/categories">Назад</a >
+             </div>
+        </div>
+   </div>
+</body>
+</html>

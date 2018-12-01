@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <title>table</title>
+    <style media="screen">
+          table {
+              position: absolute;
+              font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+              font-size: 20px;
+              border-collapse: collapse;
+              text-align: center;
+          }
+          th, td:first-child {
+               color: white;
+               padding: 10px 40px;
+          }
+          th, td {
+               border-style: solid;
+               border-width: 1px 1px 1px 1px;
+               border-color: white;
+          }
+          td {
+               background: #D8E6F3;
+          }
+          th:first-child, td:first-child {
+               text-align: left;
+          }
+  </style>
+  </head>
+  <body>
+      <div id="header">
+           <div class="headerImage" id="up">
+                <img src="/assets/img/ic_bgUp.jpg" alt="background"/>
+           </div>
+           <div class="headerImage"id="down">
+                <img src="/assets/img/ic_bgDown.jpg" alt="background"/>
+           </div>
+           <div class="header2">
+                <div class="filter">
+                     <div class="but" id="tableBack">
+                          <a href="/menu">Назад</a >
+                     </div>
+                     <form action="/filter" method="post">
+                          <div class="filterInputs">
+                               <div class="dateCont">
+                                    <input class="inp" type="text" name="date-f" placeholder="date-f">
+                                     -
+                                    <input class="inp" type="text" name="date-l" placeholder="date-l">
+                               </div>
+                               <div class="timeCont">
+                                    <input class="inp" type="text" name="time-f" placeholder="time-f">
+                                     -
+                                    <input class="inp" type="text" name="time-l" placeholder="time-l">
+                               </div>
+                               <div class="placeAndSpecCont">
+                                    <input class="inp" type="text" name="place" placeholder="place">
+                                    <input class="inp" type="text" name="specific" placeholder="specific">
+                               </div>
+                               <div class="filterButton">
+                                    <button class="fButton" type="button" type="submit" name="button">показать результаты</button>
+                               </div>
+                          </div>
+                     </form>
+                </div>
+                <div class="table-auction">
+                     <table>
+                          <tr>
+                               <th>id</th>
+                               <th>дата</th>
+                               <th>время</th>
+                               <th>место</th>
+                               <th>специфика</th>
+                          </tr>
+                          <% for(var i in arr){ %>
+                               <tr>
+                                    <th><%=arr[i].id_аукциона%></th>
+                                    <th><%=arr[i].дата%></th>
+                                    <th><%=arr[i].время%></th>
+                                    <th><%=arr[i].место%></th>
+                                    <th><%=arr[i].специфика%></th>
+                               </tr>
+                         <%}%>
+                     </table>
+                </div>
+           </div>
+      </div>
+   </body>
+</html>

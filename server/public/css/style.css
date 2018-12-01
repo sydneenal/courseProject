@@ -1,0 +1,317 @@
+*{
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     position: relative;
+}
+.subButton{
+     width: 200px;
+     height: 20px;
+}
+.item a{
+     display: block;
+     height: 100%;
+}
+.addInput{
+     margin-bottom: 20px;
+}
+#add{
+     text-align: center;
+     width:450px;
+     font-size: 35px;
+}
+#addEnter{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.headerImage{
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+}
+#header{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+}
+#up img{
+     width: 100vw;
+     height: 100vh;
+     opacity: 0.8;
+}
+#down {
+     z-index: 1;
+}
+#up {
+     z-index: 2;
+}
+#down img{
+     width: 100vw;
+     height: 100vh;
+}
+.header1{
+     z-index: 3;
+     display: inline-flex;
+}
+.header2{
+     z-index: 3;
+     width: 100%;
+     min-width: 1000px;
+     height: 100%;
+     min-height: 500px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+}
+.filterButton, .fButton{
+     width: 100%;
+     min-width: 100px;
+}
+.dateCont, .timeCont, .placeAndSpecCont{
+     margin-bottom: 10px;
+}
+ .dateCont, .timeCont, .placeAndSpecCont{
+     width: 500px;
+     height: 25px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+}
+.inp{
+     width: 48%;
+     min-width: 50px;
+}
+#tableBack{
+     margin-bottom: 29px;
+}
+.filter{
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.filterInputs{
+     color: white;
+     width: 500px;
+     height: 200px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+}
+.headerFirst{
+     width: 49vw;
+     height: 99vh;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 120px;
+     font-weight: bold;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color: white;
+}
+.subButton{
+     width: 65%;
+     height: 40px;
+}
+#btns{
+     font-size: 40px;
+     font-weight: 400;
+     width: 49vw;
+     height: 99vh;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+#btn2{
+     cursor: pointer;
+     width: 400px;
+     height: 150px;
+     border-radius: 10px;
+     border-style: double;
+     border-radius: 40px;
+     margin: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+#btn2:hover{
+     background-color: black;
+     opacity: 0.3;
+     transition: 0.4s;
+}
+#btn2:not(:hover), #btn3:not(:hover){
+     transition: 0.4s;
+}
+.headerLine {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     height: 99vh;
+     width: 1px;
+}
+.headerLine hr{
+     height: 600px;
+}
+#text{
+     margin-bottom: 20px
+     width: 400px;
+     height: 250px;
+     font-family: 'Inconsolata', monospace;
+     font-family: 'Abril Fatface', cursive;
+     font-size: 100px;
+}
+.headerLogo img{
+     height: 150px;
+     width: 150px;
+     filter: invert(100%);
+}
+#formclick{
+     margin-top: 100vh;
+}
+.formDisplay{
+     position: absolute;
+     z-index: 3;
+     width: 99vw;
+     height: 99vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.form_login{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 600px;
+     height: 800px;
+     color: white;
+     border: 1px double;
+     border-radius: 40px 40px 40px 0;
+}
+.inputtext{
+     font-size: 50px;
+}
+.hr hr{
+     width: 400px;
+     height: 1px;
+}
+.enter, .inputtext, .but, .hr{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 600px;
+     height: 80px
+}
+#addButton, #enterButton{
+     margin-top: 100px;
+}
+.but a{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     width: 100%;
+     color: white;
+     text-decoration: none;
+}
+.but{
+     cursor: pointer;
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-size: 30px;
+     width:350px;
+     height: 50px;
+     color: white;
+     border: 1px double;
+     border-radius: 20px;
+}
+.but:hover{
+     background-color: black;
+     opacity: 0.3;
+     transition: 0.4s;
+}
+.but:not(:hover){
+     transition: 0.4s;
+}
+.enter{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-size: 20px;
+     width: 400px;
+     height: 300px;
+     color: white;
+     border: 1px double;
+     border-radius: 20px;
+}
+.enter input{
+     width: 250px;
+}
+#menu{
+     z-index: 4;
+     display: absolute;
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 99vw;
+     height: 99vh;
+}
+.item{
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 20px;
+     width: 800px;
+     height: 100px;
+     margin: 40px;
+     color: white;
+     border: 1px double;
+     border-radius: 20px;
+}
+.item a{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     width: 100%;
+     color: white;
+     text-decoration: none;
+     font-size: 20px;
+     text-decoration: none;
+     color: white;
+}
+.item:hover{
+     background-color: black;
+     opacity: 0.3;
+     transition: 0.4s;
+}
+.item:not(:hover){
+     transition: 0.4s;
+     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+     font-size: 14px;
+     border-collapse: collapse;
+     text-align: center;
+}

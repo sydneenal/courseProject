@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <title>auctions</title>
+  </head>
+  <body>
+      <div class="indexHead" id="header" >
+           <div class="headerImage" id="up">
+                <img src="/assets/img/ic_bgUp.jpg" alt="background"/>
+           </div>
+           <div class="headerImage"id="down">
+                <img src="/assets/img/ic_bgDown.jpg" alt="background"/>
+           </div>
+           <div class="header1">
+                <div class="headerFirst">
+                     <div class="headerText" id="text">
+                          <p>auctions DB</p>
+                     </div>
+                     <div class="headerLogo">
+                          <img src="/assets/img/ic_logo.png" alt="auction">
+                     </div>
+                </div>
+                <div class="headerLine">
+                     <hr/>
+                </div>
+                <div class="headerText" id="btns">
+                     <div class="headerButton" id="btn1">
+                          <p>Добро пожаловать</p>
+                     </div>
+                     <div class="headerButton" id="btn2" onclick="click3('#formclick')">
+                          <p>Вход</p>
+                     </div>
+               </div>
+          </div>
+      </div>
+      <div class="formDisplay" id="formclick">
+           <div class="form_login">
+                <div class="inputtext">
+                     <p>Авторизация</p>
+                </div>
+                <div class="hr">
+                     <hr/>
+                </div>
+                <div class="enter">
+                     <div class="login">
+                          <p>login</p>
+                          <input type="text" id="login">
+                     </div>
+                     <div class="pass">
+                          <p>password</p>
+                          <input type="password" id="password">
+                     </div>
+                </div>
+                <div class="but" id="enterButton">
+                     <a href="/menu">Войти</a>
+                </div>
+           </div>
+      </div>
+      <script
+	    src="https://code.jquery.com/jquery-3.3.1.min.js"
+	    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	    crossorigin="anonymous">
+      </script>
+      <script src="/assets/js/script.js"></script>
+  </body>
+</html>
